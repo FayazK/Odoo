@@ -6,7 +6,7 @@ services:
     ports:
       - "${ODOO_PORT:-8069}:8069"
     volumes:
-      - odoo-web-data:/var/lib/odoo
+      - ./odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
     environment:
